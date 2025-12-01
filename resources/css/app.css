@@ -1,0 +1,26 @@
+/* Using Bootstrap via CDN for core styling.
+	 This file contains small project-specific overrides.
+*/
+
+:root{
+	--brand-primary: #0d6efd;
+	--brand-dark: #0b5ed7;
+	--muted: #6c757d;
+	--card-radius: 12px;
+	--shadow-soft: 0 6px 18px rgba(13,110,253,0.06);
+}
+
+/* Payment card helpers */
+.payment-card { border-radius: calc(var(--card-radius) + 4px); box-shadow: var(--shadow-soft); }
+.qris-qr { background: #fff; padding: 14px; border-radius: 8px; display:inline-block }
+.qris-qr img, .qris-qr canvas { display:block; max-width:100%; height:auto }
+
+body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.btn-primary{background-color:var(--brand-primary);border-color:var(--brand-primary)}
+.site-footer{background-color:var(--brand-primary);color:#fff}
+.card{border-radius:var(--card-radius); box-shadow:var(--shadow-soft)}
+
+/* Responsive helpers */
+@media (max-width:640px){
+	.navbar-brand{font-size:1rem}
+}
